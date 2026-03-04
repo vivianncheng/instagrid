@@ -8,13 +8,12 @@ function App() {
   const [processing, setProcessing] = useState(false);
   const [progress, setProgress] = useState(0);
   const [status, setStatus] = useState('');
-  const [gridType, setGridType] = useState(null);
+  const [, setGridType] = useState(null);
   const [manualGridType, setManualGridType] = useState(null);
   const [showPreview, setShowPreview] = useState(false);
   const [previewImages, setPreviewImages] = useState([]);
   const [imageOffsets, setImageOffsets] = useState([]);
   const fileInputRef = useRef(null);
-  const previewGridRef = useRef(null);
 
   // Constants for Instagram grid dimensions
   const TARGET_WIDTH = 1010;
